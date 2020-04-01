@@ -18,7 +18,7 @@
     <caption><?php print $caption; ?></caption>
   <?php endif; ?>
 
-  <div class="tw-grid tw-grid-cols-<?php echo count($rows[0]); ?> tw-grid-gap-12">
+  <div class="tw-grid tw-grid-cols-<?php echo count($rows[0]); ?> tw-gap-12">
     <?php foreach ($rows as $row_number => $columns): ?>
         <?php foreach ($columns as $column_number => $item): ?>
             <div>
