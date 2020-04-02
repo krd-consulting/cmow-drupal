@@ -22,12 +22,6 @@ module.exports = {
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       body: ['sofia-pro', 'Muli', 'sans-serif']
     },
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1680px',
-    },
     extend: {
       colors: {
         'cmow-indigo': '#001489',

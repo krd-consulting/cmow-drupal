@@ -662,9 +662,9 @@ h3 {
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1280px) {
   .tw-container {
-    max-width: 1680px;
+    max-width: 1280px;
   }
 }
 
@@ -5397,7 +5397,7 @@ input {
 }
 
 .tw-max-w-screen-xl {
-  max-width: 1680px !important;
+  max-width: 1280px !important;
 }
 
 .tw-min-h-0 {
@@ -18254,7 +18254,7 @@ nav #main-menu li a {
   }
 
   .sm\:tw-max-w-screen-xl {
-    max-width: 1680px !important;
+    max-width: 1280px !important;
   }
 
   .sm\:tw-min-h-0 {
@@ -31088,7 +31088,7 @@ nav #main-menu li a {
   }
 
   .md\:tw-max-w-screen-xl {
-    max-width: 1680px !important;
+    max-width: 1280px !important;
   }
 
   .md\:tw-min-h-0 {
@@ -43922,7 +43922,7 @@ nav #main-menu li a {
   }
 
   .lg\:tw-max-w-screen-xl {
-    max-width: 1680px !important;
+    max-width: 1280px !important;
   }
 
   .lg\:tw-min-h-0 {
@@ -52068,7 +52068,7 @@ nav #main-menu li a {
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1280px) {
   .xl\:tw-sr-only {
     position: absolute !important;
     width: 1px !important;
@@ -56756,7 +56756,7 @@ nav #main-menu li a {
   }
 
   .xl\:tw-max-w-screen-xl {
-    max-width: 1680px !important;
+    max-width: 1280px !important;
   }
 
   .xl\:tw-min-h-0 {
