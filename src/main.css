@@ -103,3 +103,24 @@ input {
 nav #main-menu li a {
   @apply tw-text-white tw-text-lg
 }
+
+.view-meal-display div.form-type-bef-checkbox {
+  @apply tw-mb-4 tw-cursor-pointer
+}
+
+.view-meal-display div.form-type-bef-checkbox *{
+  @apply tw-cursor-pointer;
+  @apply tw-transition-opacity tw-duration-500
+}
+
+.view-meal-display div.form-type-bef-checkbox:hover * {
+  @apply tw-opacity-50
+}
+
+.view-meal-display div.form-type-bef-checkbox label {
+  @apply tw-text-gray-500 tw-font-normal;
+}
+
+.view-meal-display div.form-type-bef-checkbox.highlight label{
+  @apply tw-text-black tw-font-bold
+}

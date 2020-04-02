@@ -13566,6 +13566,33 @@ nav #main-menu li a {
   font-size: 1.125rem
 }
 
+.view-meal-display div.form-type-bef-checkbox {
+  margin-bottom: 1rem;
+  cursor: pointer
+}
+
+.view-meal-display div.form-type-bef-checkbox *{
+  cursor: pointer;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms
+}
+
+.view-meal-display div.form-type-bef-checkbox:hover * {
+  opacity: 0.5
+}
+
+.view-meal-display div.form-type-bef-checkbox label {
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+.view-meal-display div.form-type-bef-checkbox.highlight label{
+  color: #000;
+  font-weight: 700
+}
+
 @media (min-width: 640px) {
   .sm\:tw-sr-only {
     position: absolute !important;

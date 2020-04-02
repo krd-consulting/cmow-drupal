@@ -45,9 +45,9 @@
     </div>
   <?php endif; ?>
 
-	<div class="tw-flex tw-justify-between lg:tw-flex-no-wrap tw-flex-wrap">	
+	<div class="tw-flex tw-justify-between lg:tw-flex-no-wrap tw-flex-wrap">
   	<?php if ($exposed): ?>
-    	<div class="view-filters md:tw-flex-none">
+    	<div class="view-filters md:tw-flex-none md:tw-mr-8">
       	<?php print $exposed; ?>
     	</div>
   	<?php endif; ?>
