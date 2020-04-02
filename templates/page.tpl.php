@@ -99,7 +99,7 @@
       <div id="page">
 
       <?php if ($breadcrumb): ?>
-        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+        <div id="breadcrumb" class="tw-text-cmow-indigo"><?php print $breadcrumb; ?></div>
       <?php endif; ?>
 
       <?php print $messages; ?>
