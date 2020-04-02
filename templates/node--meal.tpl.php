@@ -82,31 +82,44 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-	<?php print render($content['product:field_image']); ?>
+	<div class="tw-grid tw-grid-col-1 md:tw-grid-cols-2 tw-gap-12">
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
+    <div>
+      <div class="tw-block md:tw-hidden">
+        <?php print render($title_prefix); ?>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+        <?php print render($title_suffix); ?>
+      </div>
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
+      <?php print render($content['product:field_image']); ?>
     </div>
-  <?php endif; ?>
 
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
+    <div>
+      <div class="tw-hidden md:tw-block">
+        <?php print render($title_prefix); ?>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+        <?php print render($title_suffix); ?>
+      </div>
+
+      <?php if ($display_submitted): ?>
+        <div class="submitted">
+          <?php print $submitted; ?>
+        </div>
+      <?php endif; ?>
+
+      <div class="content"<?php print $content_attributes; ?>>
+        <?php
+          // We hide the comments and links now so that we can render them later.
+          hide($content['comments']);
+          hide($content['links']);
+          print render($content);
+        ?>
+      </div>
+
+      <?php print render($content['links']); ?>
+
+      <?php print render($content['comments']); ?>
+    </div>
   </div>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
 
 </div>
