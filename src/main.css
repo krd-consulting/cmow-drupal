@@ -131,7 +131,7 @@ nav #main-menu li a {
     tw-uppercase
 }
 
-.node-meal #edit-quantity {
+.node-meal .form-item-quantity input[type=text] {
   @apply tw-rounded-full tw-bg-gray-200 tw-py-4 tw-px-6 tw-border-none tw-font-normal tw-outline-none
 }
 
