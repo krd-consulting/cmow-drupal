@@ -13612,6 +13612,10 @@ nav #main-menu li a {
   outline: 0
 }
 
+.views-exposed-form .views-exposed-widget {
+  float: none
+}
+
 .view-meal-display div.form-type-bef-checkbox {
   margin-bottom: 1rem;
   cursor: pointer

@@ -135,6 +135,10 @@ nav #main-menu li a {
   @apply tw-rounded-full tw-bg-gray-200 tw-py-4 tw-px-6 tw-border-none tw-font-normal tw-outline-none
 }
 
+.views-exposed-form .views-exposed-widget {
+  @apply tw-float-none
+}
+
 .view-meal-display div.form-type-bef-checkbox {
   @apply tw-mb-4 tw-cursor-pointer
 }
