@@ -45,18 +45,18 @@
     </div>
   <?php endif; ?>
 
-	<div class="tw-flex tw-justify-between lg:tw-flex-no-wrap tw-flex-wrap">
+	<div class="tw-flex tw-justify-between tw-flex-wrap">
   	<?php if ($exposed): ?>
-    	<div class="view-filters md:tw-flex-none md:tw-mr-8">
+    	<div class="view-filters tw-w-full lg:tw-w-auto lg:tw-mr-16">
       	<?php print $exposed; ?>
     	</div>
   	<?php endif; ?>
   	<?php if ($rows): ?>
-    	<div class="view-content md:tw-flex-auto">
+    	<div class="view-content lg:tw-flex-1 tw-flex-auto">
       	<?php print $rows; ?>
     	</div>
   	<?php elseif ($empty): ?>
-    	<div class="view-empty md:tw-flex-auto">
+    	<div class="view-empty lg:tw-flex-1 tw-flex-auto">
       	<?php print $empty; ?>
     	</div>
   	<?php endif; ?>

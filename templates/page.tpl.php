@@ -74,7 +74,7 @@
 ?>
 
 	<div id="header" class="tw-mb-4 tw-bg-cmow-indigo">
-    <div class="tw-container tw-mx-auto tw-flex tw-items-center tw-justify-between tw-px-10 tw-py-5">
+    <div class="tw-flex tw-items-center tw-justify-between tw-px-10 tw-py-5 lg:tw-mx-24">
 
     	<?php if ($logo): ?>
      		<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="tw-mr-2">
@@ -95,7 +95,7 @@
   </div>
 
   <div class="tw-bg-white">
-    <div id="page-wrapper" class="tw-container tw-mx-auto tw-px-8 tw-py-20">
+    <div id="page-wrapper" class="tw-px-8 tw-py-20 lg:tw-mx-24">
       <div id="page">
 
       <?php if ($breadcrumb): ?>
@@ -136,7 +136,7 @@
     </div></div> <!-- /#page, /#page-wrapper -->
   </div>
   <footer id="footer" class="tw-bg-cmow-indigo tw-text-white">
-    <div class="tw-container tw-mx-auto tw-px-8 tw-py-16">
+    <div class="tw-px-8 tw-py-16 lg:tw-mx-24">
       <?php print render($page['footer']); ?>
     </div>
   </footer> <!-- /.section, /#footer -->
