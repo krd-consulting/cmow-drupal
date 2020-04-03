@@ -96,12 +96,43 @@ input {
  * @import "utilities/skew-transforms";
  */
 
+.ajax-progress-throbber {
+  @apply tw-hidden;
+}
+
 .Header-branding-logo {
   max-width: 203px;
 }
 
 nav #main-menu li a {
   @apply tw-text-white tw-text-lg
+}
+
+.node-meal .field{
+  @apply tw-mt-6
+}
+
+.node-meal .field-label, .node-meal .form-item label {
+  @apply tw-font-normal tw-uppercase tw-text-sm tw-mb-1
+}
+
+.node-meal .field-type-commerce-price {
+  @apply tw-text-cmow-indigo tw-text-lg tw-font-normal
+}
+
+.node-meal .commerce-add-to-cart .form-submit {
+  @apply
+    tw-rounded-full
+    tw-py-4 tw-px-8
+    tw-border-none
+    tw-bg-cmow-indigo
+    tw-text-white
+    tw-font-semibold
+    tw-uppercase
+}
+
+.node-meal #edit-quantity {
+  @apply tw-rounded-full tw-bg-gray-200 tw-py-4 tw-px-6 tw-border-none tw-font-normal tw-outline-none
 }
 
 .view-meal-display div.form-type-bef-checkbox {

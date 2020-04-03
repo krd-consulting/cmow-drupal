@@ -13557,6 +13557,10 @@ input {
  * @import "utilities/skew-transforms";
  */
 
+.ajax-progress-throbber {
+  display: none;
+}
+
 .Header-branding-logo {
   max-width: 203px;
 }
@@ -13564,6 +13568,48 @@ input {
 nav #main-menu li a {
   color: #fff;
   font-size: 1.125rem
+}
+
+.node-meal .field{
+  margin-top: 1.5rem
+}
+
+.node-meal .field-label, .node-meal .form-item label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem
+}
+
+.node-meal .field-type-commerce-price {
+  color: #001489;
+  font-size: 1.125rem;
+  font-weight: 400
+}
+
+.node-meal .commerce-add-to-cart .form-submit {
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-style: none;
+  background-color: #001489;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.node-meal #edit-quantity {
+  border-radius: 9999px;
+  background-color: #edf2f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-style: none;
+  font-weight: 400;
+  outline: 0
 }
 
 .view-meal-display div.form-type-bef-checkbox {
