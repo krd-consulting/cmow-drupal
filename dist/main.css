@@ -13570,6 +13570,41 @@ nav #main-menu li a {
   font-size: 1.125rem
 }
 
+#user-login-form ul li {
+  padding: 0;
+  margin: 0
+}
+
+#user-login-form ul li a {
+  color: #a0aec0
+}
+
+#user-login-form ul li a:hover {
+  color: #4299e1
+}
+
+.form-item input[type=text],
+.form-item input[type=password],
+.form-item input[type=email],
+.form-item input[type=number] {
+  background-color: #f7fafc;
+  border-width: 1px;
+  padding: 0.25rem;
+  width: 100%
+}
+
+.form-submit {
+  border-radius: 9999px;
+  outline: 0;
+  border-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #001489;
+  color: #fff
+}
+
 .node-meal .field{
   margin-top: 1.5rem
 }

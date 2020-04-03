@@ -108,6 +108,28 @@ nav #main-menu li a {
   @apply tw-text-white tw-text-lg
 }
 
+#user-login-form ul li {
+  @apply tw-p-0 tw-m-0
+}
+#user-login-form ul li a {
+  @apply tw-text-gray-500
+}
+
+#user-login-form ul li a:hover {
+  @apply tw-text-blue-500
+}
+
+.form-item input[type=text],
+.form-item input[type=password],
+.form-item input[type=email],
+.form-item input[type=number] {
+  @apply tw-bg-gray-100 tw-border tw-p-1 tw-w-full
+}
+
+.form-submit {
+  @apply tw-rounded-full tw-outline-none tw-border-none tw-py-2 tw-px-6 tw-bg-cmow-indigo tw-text-white
+}
+
 .node-meal .field{
   @apply tw-mt-6
 }
