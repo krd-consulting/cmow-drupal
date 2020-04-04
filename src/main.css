@@ -100,10 +100,6 @@ input {
   @apply tw-hidden;
 }
 
-.Header-branding-logo {
-  max-width: 203px;
-}
-
 nav #main-menu li a {
   @apply tw-text-white tw-text-lg
 }

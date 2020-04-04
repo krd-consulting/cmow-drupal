@@ -78,7 +78,7 @@
 
     	<?php if ($logo): ?>
      		<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="tw-mr-2">
-       		<img class="tw-block Header-branding-logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
+       		<img class="tw-block" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
        	</a>
      	<?php endif; ?>
 
