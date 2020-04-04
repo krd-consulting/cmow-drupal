@@ -74,7 +74,7 @@
 ?>
 
 	<div id="header" class="tw-mb-4 tw-bg-cmow-indigo">
-    <div class="tw-flex tw-items-center tw-justify-between tw-p-4 lg:tw-py-20 lg:tw-py-5 lg:tw-mx-24">
+    <div class="tw-flex tw-items-center tw-justify-between tw-p-4 lg:tw-py-4 lg:tw-mx-24">
 
     	<?php if ($logo): ?>
      		<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="tw-mr-2">
