@@ -73,7 +73,7 @@
  */
 ?>
 
-  <div id="header" class="tw-mb-4 tw-bg-cmow-indigo">
+  <div id="header" class="tw-mb-4 tw-bg-cmow-indigo tw-border">
     <div class="tw-flex tw-items-center tw-justify-between tw-p-4 lg:tw-py-4 lg:tw-mx-24">
 
       <?php if ($logo): ?>
@@ -82,16 +82,24 @@
         </a>
       <?php endif; ?>
 
-      <?php if ($main_menu || $secondary_menu): ?>
+      <!--<?php if ($main_menu || $secondary_menu): ?>
         <nav id="navigation" class="tw-mb-4">
           <div class="nav-inner">
-            <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu'))); ?>
+            <?php print theme('links__system_main_menu', array('links' => menu_navigation_links('main', 1), 'attributes' => array('id' => 'main-menu'))); ?>
             <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu'))); ?>
           </div>
         </nav>
+      <?php endif; ?>-->
+
+      <?php if ($page['header']): ?>
+        <div class="tw-hidden lg:tw-block"><?php print render($page['header']); ?></div>
+        <a id="open-mobile-menu" class="lg:tw-hidden tw-font-bold tw-text-white tw-text-xl">Menu</a>
       <?php endif; ?>
 
-   </div>
+    </div>
+    <?php if ($page['header']): ?>
+      <div id="mobile-menu" class="lg:tw-hidden tw-pt-8 tw-pb-16 tw-object-right-top tw-w-full tw-z-50 tw-bg-cmow-indigo"><?php print render($page['header']); ?></div>
+    <?php endif; ?>
   </div>
 
   <div class="tw-bg-white">
