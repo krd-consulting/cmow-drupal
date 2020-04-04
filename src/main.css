@@ -15,7 +15,7 @@
 @import url("https://use.typekit.net/tpv2tkc.css");
 
 body {
-  @apply font-body font-light bg-cmow-indigo;
+  @apply font-body font-light;
   font-size: 16px;
 }
 
@@ -100,8 +100,65 @@ input {
   @apply tw-hidden;
 }
 
-nav #main-menu li a {
+nav#navigation ul {
+  @apply tw-inline-block
+}
+
+nav#navigation #main-menu li {
+  @apply tw-inline-block
+}
+
+nav#navigation ul li {
+  @apply tw-px-4
+}
+
+nav#navigation ul li a {
   @apply tw-text-white tw-text-lg
+}
+
+.region-header {
+  @apply tw-flex tw-justify-around
+}
+
+.region-header .active {
+  @apply tw-text-orange-400
+}
+
+.region-header .block-menu-block {
+  @apply tw-m-0
+}
+
+.region-header .menu-block-wrapper >  ul.menu {
+  @apply tw-text-white tw-px-2 tw-font-bold
+}
+
+.region-header .menu-block-wrapper > ul.menu > li {
+  @apply tw-inline-block tw-px-4
+}
+
+.region-header ul.menu li.collapsed, .region-header ul.menu li {
+  @apply tw-list-none tw-m-0 tw-text-lg;
+  list-style-image: none;
+}
+
+.region-header ul.menu li > ul {
+  @apply tw-absolute tw-p-4 tw-bg-white tw-text-cmow-indigo
+}
+
+#mobile-menu .region-header {
+  @apply tw-block
+}
+
+#mobile-menu .menu-block-wrapper ul.menu {
+  @apply tw-block
+}
+
+#mobile-menu ul.menu li {
+  @apply tw-block tw-text-xl
+}
+
+#mobile-menu .region-header ul.menu li > ul {
+  @apply tw-bg-transparent tw-p-0 tw-pl-4 tw-text-white
 }
 
 #user-login-form ul li {

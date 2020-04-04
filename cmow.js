@@ -5,4 +5,8 @@ jQuery(document).ready(function($) {
     $(this).toggleClass("tw-text-gray-500");
   });
 
+  $("#open-mobile-menu").click(function() {
+    $("#mobile-menu").toggleClass("tw-hidden");
+  });
+
 });

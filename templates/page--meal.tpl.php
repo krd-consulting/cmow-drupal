@@ -78,7 +78,7 @@
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="tw-mr-2">
-          <img class="tw-block lg:tw-w-64 tw-w-32" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
+          <img class="tw-block lg:tw-w-48 tw-w-32" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
         </a>
       <?php endif; ?>
 
@@ -86,7 +86,7 @@
         <nav id="navigation" class="tw-mb-4">
           <div class="nav-inner">
             <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu'))); ?>
-            <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
+            <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu'))); ?>
           </div>
         </nav>
       <?php endif; ?>
