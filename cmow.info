@@ -2,3 +2,5 @@ name = Calgary Meals on Wheels Drupal
 description = Drupal 7 theme for Calgary Meals on Wheels based off of tailwindcss
 core = 7.x
 stylesheets[all][] = dist/main.css
+
+scripts[] = cmow.js

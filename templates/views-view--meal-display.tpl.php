@@ -47,7 +47,7 @@
 
 	<div class="tw-flex tw-justify-between tw-flex-wrap">
   	<?php if ($exposed): ?>
-    	<div class="view-filters tw-w-full lg:tw-w-auto lg:tw-mr-16">
+    	<div class="view-filters tw-w-full lg:tw-w-1/6 lg:tw-mr-4">
       	<?php print $exposed; ?>
     	</div>
   	<?php endif; ?>
