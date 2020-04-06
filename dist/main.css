@@ -13661,7 +13661,22 @@ nav#navigation ul li a {
   background-color: #f7fafc;
   border-width: 1px;
   padding: 0.25rem;
-  width: 100%
+  width: 100%;
+}
+
+.line-item-summary {
+  text-align: right;
+  margin: 0 0.3em 0.5em 0;
+  font-size: 2rem;
+}
+
+form#views-form-commerce-cart-form-default {
+  width: 50%;
+}
+
+form#views-form-commerce-cart-form-default table {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .form-submit {
@@ -13673,7 +13688,8 @@ nav#navigation ul li a {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   background-color: #001489;
-  color: #fff
+  color: #fff;
+  margin: 0 5pt;
 }
 
 .node-meal .field{
@@ -13689,9 +13705,18 @@ nav#navigation ul li a {
 
 .node-meal .field-type-commerce-price {
   color: #001489;
-  font-size: 1.125rem;
-  font-weight: 400
+  font-size: 2.5rem;
+  font-weight: 400;
+  float: right;
+  position: relative;
+  top: 187px;  
+  right: 20%
 }
+
+.node-meal .form-item-quantity {
+  width: 50%;
+  font-size: 1.125em;
+} 
 
 .node-meal .commerce-add-to-cart .form-submit {
   border-radius: 9999px;

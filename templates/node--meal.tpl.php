@@ -111,7 +111,7 @@
       <div class="content"<?php print $content_attributes; ?>>
 
         <div class="tw-display-none">
-          <?php print render($content['product:field_meal_type']);  ?>
+          <?php print render($content['product:field_meal_type']);?> 
         </div>
         <?php
           // We hide the comments and links now so that we can render them later.
