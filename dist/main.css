@@ -631,6 +631,10 @@ h3 {
   font-size: 1.875rem
 }
 
+th {
+  padding: 0
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
@@ -698,6 +702,23 @@ input {
 .content ol {
   margin-bottom: 1rem;
   line-height: 1.5;
+}
+
+table.views-table {
+  width: 100%;
+}
+
+table.views-table tr td, table.views-table tr th {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+table.views-table .views-field-views-bulk-operations {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  width: 1%;
 }
 
 /**
@@ -13555,6 +13576,15 @@ input {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+body {
+  background-color: #001489
+}
+
+#main,
+body.overlay {
+  background-color: #ffffff;
+}
 
 .ajax-progress-throbber {
   display: none;

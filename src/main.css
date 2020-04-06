@@ -31,6 +31,10 @@ h3 {
   @apply font-bold text-3xl
 }
 
+th {
+  @apply p-0
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
@@ -71,6 +75,19 @@ input {
   @apply mb-4 leading-normal;
 }
 
+table.views-table {
+  @apply tw-w-full;
+}
+
+table.views-table tr td, table.views-table tr th {
+  @apply tw-py-2 tw-px-4;
+}
+
+table.views-table .views-field-views-bulk-operations {
+  @apply tw-pl-2 tw-pr-4;
+  width: 1%;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -95,6 +112,15 @@ input {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+body {
+  @apply tw-bg-cmow-indigo
+}
+
+#main,
+body.overlay {
+  background-color: #ffffff;
+}
 
 .ajax-progress-throbber {
   @apply tw-hidden;
