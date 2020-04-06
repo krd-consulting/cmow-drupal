@@ -73,7 +73,7 @@
  */
 ?>
 
-	<div id="header" class="tw-mb-4 tw-bg-cmow-indigo tw-border">
+	<div id="header" class="tw-mb-4 tw-bg-cmow-indigo">
     <div class="tw-flex tw-items-center tw-justify-between tw-p-4 lg:tw-py-4 lg:tw-mx-24">
 
     	<?php if ($logo): ?>
@@ -113,6 +113,11 @@
       <?php print $messages; ?>
 
       <div id="main-wrapper"><div id="main" class="md:tw-flex tw--mx-4 tw-mb-6 clearfix">
+        <?php if ($page['sidebar_first']): ?>
+          <div id="sidebar-first" class="md:tw-w-1/4 tw-px-4"><div class="section">
+            <?php print render($page['sidebar_first']); ?>
+          </div></div> <!-- /.section, /#sidebar-first -->
+        <?php endif; ?>
 
         <div id="content" class="md:tw-flex-1 tw-px-4"><div class="section">
           <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
@@ -127,14 +132,8 @@
           <?php print $feed_icons; ?>
         </div></div> <!-- /.section, /#content -->
 
-        <?php if ($page['sidebar_first']): ?>
-          <div id="sidebar-first" class="md:tw-w-1/4 tw-px-4"><div class="section">
-            <?php print render($page['sidebar_first']); ?>
-          </div></div> <!-- /.section, /#sidebar-first -->
-        <?php endif; ?>
-
         <?php if ($page['sidebar_second']): ?>
-          <div id="sidebar-second" class="column sidebar"><div class="section">
+          <div id="sidebar-second" class="md:tw-w-1/4 tw-px-4"><div class="section">
             <?php print render($page['sidebar_second']); ?>
           </div></div> <!-- /.section, /#sidebar-second -->
         <?php endif; ?>

@@ -73,7 +73,7 @@
  */
 ?>
 
-  <div id="header" class="tw-mb-4 tw-bg-cmow-indigo tw-border">
+  <div id="header" class="tw-mb-4 tw-bg-cmow-indigo">
     <div class="tw-flex tw-items-center tw-justify-between tw-p-4 lg:tw-py-4 lg:tw-mx-24">
 
       <?php if ($logo): ?>
